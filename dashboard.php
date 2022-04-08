@@ -130,8 +130,8 @@ if($stmt = $conn3->prepare($sql)){
                                             <?php    
                                             } else{?>
                                                 <tr style="background-color:#02ab2c">
-                                                    <td>$title</td>
-                                                    <td>$body</td>
+                                                    <td><?php echo $row["task"]; ?></td>
+                                                    <td><?php $row["body"]; ?></td>
                                                     <td><?php echo '<a href="edit.php?id=' . $row['id']. '" class="btn btn-info">'?>Edit</a></td>
                                                     <td><?php echo '<a href="delete.php?id=' . $row['id']. '" class="btn btn-danger">'?>Delete</a></td>
                                                 </tr>
